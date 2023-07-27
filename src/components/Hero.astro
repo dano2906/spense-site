@@ -1,4 +1,36 @@
+---
+import check from '@assets/Checkmark.svg'
+import hero_desktop from '@assets/Hero Image (Desktop).webp'
+import hero_mobile from '@assets/Hero Image (Mobile).webp'
+import hero_tablet from '@assets/Hero Image (Tablet).webp'
+---
 
-<div class="w-screen h-auto bg-slate-600">
-
-</div>
+<main class="w-screen h-auto bg-slate-100 pb-14">
+    <div class="max-w-5xl h-auto mx-auto bg-slate-100 flex flex-row items-center justify-center">
+        <section class="w-1/2 h-full font-cabin text-gray-800 text-left flex flex-col items-start justify-start gap-4">
+            <h1 class="text-[52px] leading-snug font-black">Shape your unfiltered thoughts. Get paid.</h1>
+            <h3 class="text-base text-gray-600 leading-7 font-medium">Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topic you love, and get paid for doing <span class="italic">just</span> that.</h3>
+            <ul class="flex flex-col items-start justify-start gap-2">
+                <li class="flex flex-row items-start justify-start gap-3">
+                    <img src={check.src} alt="Checkmark svg" width={check.width} height={check.height} />
+                    <h5>Receive 99% of the earnings.</h5>
+                </li>
+                <li class="flex flex-row items-start justify-start gap-3">
+                    <img src={check.src} alt="Checkmark svg" width={check.width} height={check.height} />
+                    <h5>Get paid via Debit Card, ACH, or Paypal.</h5>
+                </li>
+                <li class="flex flex-row items-start justify-start gap-3">
+                    <img src={check.src} alt="Checkmark svg" width={check.width} height={check.height} />
+                    <h5>Withdraw your earnings anytime.</h5>
+                </li>
+            </ul>
+            <form class="flex flex-row items-start justify-around gap-4">
+                <input type="email" name="email" id="email" class="w-52 h-[52px] border border-gray-400 rounded-md px-3 outline-none" placeholder="john@example.com"/>
+                <button class="bg-black text-white font-cabin font-medium text-base py-3 px-5 rounded-md border-2 border-black transition hover:bg-white hover:text-black hover:borde-2 hover:border-black">Get Started</button>
+            </form>
+        </section>
+        <section class="w-1/2 h-auto flex flex-col items-end justify-end">
+            <img src={hero_desktop.src} alt="hero_desktop svg" width={hero_desktop.width} height={hero_desktop.height} class="hidden md:inline-block md:w-[420px] md:h-[480px]"/>
+        </section>
+    </div>
+</main>
