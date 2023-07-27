@@ -6,12 +6,15 @@ import hero_tablet from '@assets/Hero Image (Tablet).webp'
 ---
 
 <main class="w-screen h-auto bg-slate-200 pb-14">
-    <div class="w-[90%] md:max-w-5xl h-auto mx-auto bg-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-center">
+    <div class="w-[90%] md:max-w-5xl h-auto mx-auto bg-slate-200 flex flex-col md:flex-row sm:items-center sm:justify-center">
         <section class="w-full md:w-1/2 h-auto flex flex-col items-center justify-center md:items-end md:justify-end sm:hidden">
             <img src={hero_mobile.src} alt="hero_mobile svg" width={hero_mobile.width} height={hero_mobile.height} class="block sm:hidden w-full md:h-96"/>
         </section>
+        <section class="hidden md:hidden sm:w-full sm:h-96 sm:flex sm:flex-col sm:items-center sm:justify-center">
+            <img src={hero_tablet.src} alt="hero_tablet svg" width={hero_tablet.width} height={hero_tablet.height} class="hidden sm:block sm:w-full sm:h-96"/>
+        </section>
         <section class="w-full md:w-1/2 h-full font-cabin text-gray-800 text-left flex flex-col items-start justify-start gap-4">
-            <h1 class="text-[28px]/9 mt-8 sm:mt-0 md:text-[52px] md:leading-snug font-black">Shape your unfiltered thoughts. Get paid.</h1>
+            <h1 class="text-[28px]/9 sm:text-5xl md:text-[52px] sm:leading-snug font-black mt-8 md:mt-0">Shape your unfiltered thoughts. Get paid.</h1>
             <h3 class="leading-6 text-base text-gray-600 md:leading-7 font-medium">Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topic you love, and get paid for doing <span class="italic">just</span> that.</h3>
             <ul class="flex flex-col items-start justify-start gap-1 sm:gap-2 font-medium">
                 <li class="flex flex-row items-start justify-start gap-3">
