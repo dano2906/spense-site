@@ -1,5 +1,5 @@
 # URL
-https://site.url 🔗
+[https://01-spense-challenge.netlify.app](https://01-spense-challenge.netlify.app) 🔗
 
 ## Setup
 
@@ -9,11 +9,3 @@ https://site.url 🔗
 4. Assets and view transition (experimental) ✅
 5. Standard linter ✅
 6. Assets ✅
-
-## Components
-1. Top Banner ✅
-2. Hero Section ⚠️
-3. Navbar ✅
-4. Merch Section
-5. Publicity Section
-6. Footer
