@@ -7,7 +7,6 @@ export default defineConfig({
     applyBaseStyles: false
   })],
   experimental: {
-    assets: true,
-    viewTransitions: true
+    assets: true
   }
 })
