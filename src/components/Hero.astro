@@ -5,12 +5,15 @@ import hero_mobile from '@assets/Hero Image (Mobile).webp'
 import hero_tablet from '@assets/Hero Image (Tablet).webp'
 ---
 
-<main class="w-screen h-auto bg-slate-100 pb-14">
-    <div class="max-w-5xl h-auto mx-auto bg-slate-100 flex flex-row items-center justify-center">
-        <section class="w-1/2 h-full font-cabin text-gray-800 text-left flex flex-col items-start justify-start gap-4">
-            <h1 class="text-[52px] leading-snug font-black">Shape your unfiltered thoughts. Get paid.</h1>
-            <h3 class="text-base text-gray-600 leading-7 font-medium">Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topic you love, and get paid for doing <span class="italic">just</span> that.</h3>
-            <ul class="flex flex-col items-start justify-start gap-2">
+<main class="w-screen h-auto bg-slate-200 pb-14">
+    <div class="w-[90%] md:max-w-5xl h-auto mx-auto bg-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-center">
+        <section class="w-full md:w-1/2 h-auto flex flex-col items-center justify-center md:items-end md:justify-end sm:hidden">
+            <img src={hero_mobile.src} alt="hero_mobile svg" width={hero_mobile.width} height={hero_mobile.height} class="block sm:hidden w-full md:h-96"/>
+        </section>
+        <section class="w-full md:w-1/2 h-full font-cabin text-gray-800 text-left flex flex-col items-start justify-start gap-4">
+            <h1 class="text-[28px]/9 mt-8 sm:mt-0 md:text-[52px] md:leading-snug font-black">Shape your unfiltered thoughts. Get paid.</h1>
+            <h3 class="leading-6 text-base text-gray-600 md:leading-7 font-medium">Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topic you love, and get paid for doing <span class="italic">just</span> that.</h3>
+            <ul class="flex flex-col items-start justify-start gap-1 sm:gap-2 font-medium">
                 <li class="flex flex-row items-start justify-start gap-3">
                     <img src={check.src} alt="Checkmark svg" width={check.width} height={check.height} />
                     <h5>Receive 99% of the earnings.</h5>
@@ -24,9 +27,9 @@ import hero_tablet from '@assets/Hero Image (Tablet).webp'
                     <h5>Withdraw your earnings anytime.</h5>
                 </li>
             </ul>
-            <form class="flex flex-row items-start justify-around gap-4">
+            <form class="flex flex-row items-start justify-around gap-1 sm:gap-4">
                 <input type="email" name="email" id="email" class="w-52 h-[52px] border border-gray-400 rounded-md px-3 outline-none" placeholder="john@example.com"/>
-                <button class="bg-black text-white font-cabin font-medium text-base py-3 px-5 rounded-md border-2 border-black transition hover:bg-white hover:text-black hover:borde-2 hover:border-black">Get Started</button>
+                <button class="bg-black text-white font-cabin font-medium text-sm sm:text-base py-1 px-4 sm:py-3 sm:px-5 rounded-md border-2 border-black transition hover:bg-white hover:text-black hover:borde-2 hover:border-black">Get Started</button>
             </form>
         </section>
         <section class="w-1/2 h-auto flex flex-col items-end justify-end">
