@@ -1,0 +1,35 @@
+---
+import menu from '@assets/Menu.svg'
+---
+
+<header class="w-screen h-auto bg-slate-100 p-6 sm:p-8 md:p-10">
+    <nav class="w-full md:max-w-5xl h-auto mx-auto flex flex-row items-center justify-between">
+        <h1 class="font-cabin font-black text-lg text-black">spence.</h1>
+        <div class="hidden sm:flex">
+            <ul class="flex flex-row items-center justify-around gap-6 font-cabin font-medium text-black text-base">
+                <li>
+                    <button class="p-1 rounded-md transition-color hover:text-slate-100 hover:bg-black">
+                        Bussiness
+                    </button>
+                </li>
+                <li>
+                    <button class="p-1 rounded-md transition-color hover:text-slate-100 hover:bg-black">
+                        Features
+                    </button>
+                </li>
+                <li>
+                    <button class="p-1 rounded-md transition-color hover:text-slate-100 hover:bg-black">
+                        Pricing
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="hidden sm:flex sm:flex-row sm:items-center sm:justify-around sm:gap-4">
+            <a href="" class="font-cabin font-medium text-black text-base">Login</a>
+            <button class="bg-black text-white font-cabin font-medium text-base py-3 px-5 rounded-md border-2 border-black transition hover:bg-white hover:text-black hover:borde-2 hover:border-black">Get Started</button>
+        </div>
+        <button class="inline-flex sm:hidden">
+            <img src={menu.src} alt="Menu icon" width={menu.width} height={menu.height} />
+        </button>
+    </nav>
+</header>
