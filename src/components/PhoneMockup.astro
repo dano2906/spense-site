@@ -3,7 +3,7 @@ import mockup_desktop from '@assets/Phone Mockup (Desktop).webp'
 import ArrowLeft from '@assets/ArrowLeft.svg'
 ---
 
-<div class="max-w-5xl h-auto mx-auto bg-slate-200 flex flex-row items-center justify-center rounded-md">
+<div class="max-w-5xl h-auto mx-auto bg-slate-200 flex flex-row items-center justify-center rounded-md shadow relative">
     <div class="w-full h-full flex flex-col items-start justify-center p-8 gap-y-6">
         <h2 class="font-cabin font-black text-5xl text-left text-black leading-snug">Secure your money with Escrow. </h2>
         <p class="leading-6 text-base text-gray-600 md:leading-7 font-medium font-cabin text-left">Spense uses Escrow to secure all payments. We believe Escrow offers the highest level of security for payments, so you never worry about scams. </p>
@@ -13,7 +13,7 @@ import ArrowLeft from '@assets/ArrowLeft.svg'
             </svg>
         </a>
     </div>
-    <div class="w-full h-full flex items-end justify-end p-0">
-        <img src={mockup_desktop.src} alt="Mockup mobile desktop" width={mockup_desktop.width} height={mockup_desktop.height}/>
+    <div class="w-full h-full grid place-content-end p-0">
+        <img src={mockup_desktop.src} alt="Mockup mobile desktop" width={mockup_desktop.width} height={mockup_desktop.height} class="absolute bottom-0 right-0"/>
     </div>
 </div>
