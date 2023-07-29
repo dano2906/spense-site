@@ -9,4 +9,27 @@
     font-display: 'swap';
     src: url('/fonts/Cabin-VariableFont.ttf') format("truetype");
 }
-  
+
+.content-footer > div {
+    @apply flex flex-col items-start justify-start sm:gap-y-3;
+}
+
+.content-footer > div:not(:first-child) {
+    @apply gap-y-2;
+}
+
+.content-footer > div:nth-last-child(1), .content-footer > div:nth-last-child(2) {
+    @apply sm:px-4 md:px-0 row-start-2 sm:row-start-auto sm:col-start-auto;
+}
+
+.content-footer > div > p {
+    @apply text-gray-500 font-medium text-base;
+}
+
+.content-footer > div > h6 {
+    @apply text-white font-bold text-lg text-left;
+}
+
+.content-footer > div > a {
+    @apply text-gray-500 font-normal md:font-medium text-base;
+}
