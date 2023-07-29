@@ -9,13 +9,13 @@ import google from '@assets/Google Logo.webp'
 import slack from '@assets/Slack Logo.png'
 ---
 
-<div class="max-w-6xl h-auto mx-auto flex flex-row items-center justify-center gap-x-6">
-    <img src={facebook.src} alt="facebook logo" width={facebook.width} height={facebook.height} class="w-28 h-12"/>
-    <img src={dribble.src} alt="dribble logo" width={dribble.width} height={dribble.height} class="w-28 h-12"/>
-    <img src={youtube.src} alt="youtube logo" width={youtube.width} height={youtube.height} class="w-28 h-12"/>
+<div class="md:max-w-6xl sm:max-w-3xl w-4/5 h-auto mx-auto px-2 flex flex-row items-center justify-between sm:justify-center gap-y-16 sm:gap-x-8 md:gap-x-6 ">
+    <img src={facebook.src} alt="facebook logo" width={facebook.width} height={facebook.height} class="hidden md:block w-28 h-12"/>
+    <img src={dribble.src} alt="dribble logo" width={dribble.width} height={dribble.height} class="hidden md:block w-28 h-12"/>
+    <img src={youtube.src} alt="youtube logo" width={youtube.width} height={youtube.height} class="hidden sm:block w-28 h-12"/>
     <img src={pinterest.src} alt="pinterest logo" width={pinterest.width} height={pinterest.height} class="w-28 h-12"/>
     <img src={twitter.src} alt="twitter logo" width={twitter.width} height={twitter.height} class="w-28 h-12"/>
-    <img src={reddit.src} alt="reddit logo" width={reddit.width} height={reddit.height} class="w-28 h-12"/>
-    <img src={google.src} alt="google logo" width={google.width} height={google.height} class="w-28 h-12"/>
-    <img src={slack.src} alt="slack logo" width={slack.width} height={slack.height} class="w-28 h-12"/>
+    <img src={reddit.src} alt="reddit logo" width={reddit.width} height={reddit.height} class="hidden sm:block w-28 h-12"/>
+    <img src={google.src} alt="google logo" width={google.width} height={google.height} class="hidden md:block w-28 h-12"/>
+    <img src={slack.src} alt="slack logo" width={slack.width} height={slack.height} class="hidden md:block w-28 h-12"/>
 </div>
