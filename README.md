@@ -15,6 +15,6 @@
 1. Top banner ✅
 2. Navbar ✅
 3. Hero section ✅
-4. Merch section 
-5. Publicity section 
-6. Footer 
+4. Merch section ✅
+5. Publicity section ✅
+6. Footer ✅
